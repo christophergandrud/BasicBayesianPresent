@@ -14,7 +14,11 @@ output:
 
 <br>
 
-This slide deck is available at: <http://christophergandrud.github.io/BasicBayesianPresent>.
+This slide deck is available at:
+
+<br>
+
+<http://christophergandrud.github.io/BasicBayesianPresent>.
 
 ## Overview
 
@@ -317,7 +321,7 @@ alpha[2,1] <- 0
 
 - Gelman, Andrew, et al. 2014. *Bayesian Data Analysis*. 3rd Edition. Boca Raton, FL: CRC Press.
 
-- Nice comparison of Bayesian vs. Frequentist methods in data driven business from the developers at [Lyst](http://developers.lyst.com/data/2014/05/10/bayesian-ab-testing/).
+- Nice **comparison of Bayesian vs. Frequentist methods** in data driven **business** from the developers at [Lyst](http://developers.lyst.com/data/2014/05/10/bayesian-ab-testing/).
 
 - **Prediction intervals and confidence intervals**: nice explanatory [post](http://robjhyndman.com/hyndsight/intervals/) by Rob Hyndman.
 
