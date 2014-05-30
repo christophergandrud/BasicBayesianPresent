@@ -5,7 +5,7 @@ date: "5 June 2014"
 output:
   revealjs_presentation:
     theme: solarize
-    transition: linear
+    transition: none
     center: false
     highlight: default
 ---
