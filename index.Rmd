@@ -258,7 +258,11 @@ Update **prior** information with **new data** to create a **posterior** probabi
 
 - So it can be good to develop source code that **dynamically** creates the probability model.
 
-- Use the programming language's version of [concatenate](http://en.wikipedia.org/wiki/Concatenation).
+- Use your programming language's version of [concatenate](http://en.wikipedia.org/wiki/Concatenation).
+
+    - `cat` in R
+    
+    - `+` in Python
 
 ---
 
