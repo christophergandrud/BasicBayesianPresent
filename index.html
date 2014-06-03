@@ -308,10 +308,12 @@ code > span.er { color: #ff0000; font-weight: bold; }
 <ul>
 <li><p>Setting up a probability model is an <strong>interative process</strong> as you adjust the parameters to include in the model and the data.</p></li>
 <li><p>So it can be good to develop source code that <strong>dynamically</strong> creates the probability model.</p></li>
+<li><p>Use the programming language’s version of <a href="http://en.wikipedia.org/wiki/Concatenation">concatenate</a>.</p></li>
 </ul>
 </section>
 <section class="slide level2">
 
+<p><code>ExampleSource.R</code></p>
 <pre class="sourceCode r"><code class="sourceCode r"><span class="kw">cat</span>(<span class="kw">paste0</span>(<span class="st">'</span>
 <span class="st">model{</span>
 <span class="st">    for (n in 1:'</span>, Num, <span class="st">'){</span><span class="ch">\n</span><span class="st">'</span>,
