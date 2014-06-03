@@ -131,13 +131,13 @@ Update **prior** information with **new data** to create a **posterior** probabi
 
 <br>
 
-- [King, Tomz, and Wittenberg (2000)](http://gking.harvard.edu/files/gking/files/making.pdf) offer a middle ground with post-estimation simulations.
+- [King, Tomz, and Wittenberg (2000)](http://gking.harvard.edu/files/gking/files/making.pdf) offer a middle ground for estimating **common sense uncertainty** with post-estimation simulations.
 
 - Often less computationally intensive.
 
 - Provides common sense interpretations of quantities of interest + uncertainty.
 
-- However, often not as flexible.
+- However, not as flexible.
 
 ## A middle ground? (2)
 
@@ -297,6 +297,14 @@ alpha[2,1] <- 0
 
 [full source code](https://github.com/FGCH/FRTIndex/blob/master/source/FRTIndex_CreatorV2.R)
 
+---
+
+<br>
+<br>
+
+<a href="http://xkcd.com/974/"><img src="http://imgs.xkcd.com/comics/the_general_problem.png"></img></a>
+
+
 ## Practical tips (3)
 
 <br>
@@ -307,7 +315,7 @@ alpha[2,1] <- 0
 
 - Conditioning a probability model on observed data can be **computationally intensive**, i.e. it can slow your desktop computer to a crawl.
 
-- Can be useful to run on a **remote server**.
+- So it can be useful to run on a **remote server**.
 
 - Relatviely easy to set up (see [here](http://blog.yhathq.com/posts/r-in-the-cloud-part-1.html) and [my FRT code](https://github.com/FGCH/FRTIndex/blob/master/source/AmazonEC2Setup.sh)).
 
