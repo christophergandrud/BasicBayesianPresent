@@ -136,7 +136,7 @@ code > span.er { color: #ff0000; font-weight: bold; }
 </section>
 <section id="basic-idea-behind-bda" class="slide level2">
 <h1>Basic Idea behind BDA</h1>
-<p><br></p>
+<p><br> <br> <br></p>
 <p>Update <strong>prior</strong> information with <strong>new data</strong> to create a <strong>posterior</strong> probability distribution.</p>
 </section>
 <section id="gelman-et-al.-2014-3-three-step-process" class="slide level2">
@@ -146,6 +146,7 @@ code > span.er { color: #ff0000; font-weight: bold; }
 <li><p>Set up a <strong>full probability model</strong> (<em>prior</em>).</p></li>
 <li><p>Condition on <strong>observed data</strong> (<em>new data</em>).</p></li>
 <li><p>Evaluate the <strong>fit</strong> of the model and posterior distribution’s <strong>implications</strong> (<em>posterior</em>).</p></li>
+<li><p><strong>Repeat</strong> when new data is available.</p></li>
 </ol>
 </section>
 <section id="a-key-contribution-emphasising-uncertainty-estimation" class="slide level2">
@@ -174,7 +175,7 @@ code > span.er { color: #ff0000; font-weight: bold; }
 <ul>
 <li><strong>95% Confidence interval</strong>: Repeated samples will contain the true parameter within the interval 95% of the time.</li>
 </ul>
-<p><br></p>
+<p><br> <br></p>
 <h3 id="bayesian-common-sense-interpretation">Bayesian ‘common sense interpretation’</h3>
 <ul>
 <li><strong>95% Probability (credible) interval</strong>: there is a 95% <strong>probability</strong> that the unknown parameter is actually in the interval.</li>
@@ -184,16 +185,20 @@ code > span.er { color: #ff0000; font-weight: bold; }
 <h1>Modelling flexibility</h1>
 <p><br></p>
 <ul>
-<li><p>Can include prior information from different sources, including previous studies, while also incorporating uncertainty.</p></li>
+<li>Can <strong>include prior information</strong> from different sources, including previous studies, while also <strong>incorporating uncertainty</strong>.</li>
+</ul>
+<p><br></p>
+<p>Very flexible:</p>
+<ul>
 <li><p>Hierarchical models</p></li>
 <li><p>Item response models</p></li>
 <li><p>Missing data imputation</p></li>
-<li><p>And so on . . .</p></li>
+<li><p>. . .</p></li>
 </ul>
 </section>
 <section id="notation" class="slide level2">
 <h1>Notation</h1>
-<p><br></p>
+<p><br> <br> <br></p>
 <ul>
 <li><p>Good idea to become familiar with BDA notation.</p></li>
 <li><p>A nice place to start is: Gelman et al. (2014) pages 4-6.</p></li>
@@ -213,12 +218,12 @@ code > span.er { color: #ff0000; font-weight: bold; }
 <h1>A middle ground? (2)</h1>
 <p><br></p>
 <ol type="1">
-<li><p>Estimate parameters (using preferred model)</p></li>
+<li><p><strong>Estimate parameters</strong> (using preferred model)</p></li>
 <li><p>Use <strong>post-estimation simulations</strong> to estimate uncertainty around quantities of interest.</p>
 <ul>
 <li>Draw <span class="math">\(n\)</span> values of the parameter point estimates (<span class="math">\(\hat{\beta}\)</span>) from multivariate normal distributions with mean <span class="math">\(\hat{\beta}\)</span> and variance specified by the parameter’s covariance.</li>
 </ul></li>
-<li><p>Usually plot results.</p></li>
+<li><p>Usually <strong>plot</strong> results.</p></li>
 </ol>
 </section>
 <section id="a-middle-ground-3" class="slide level2">
@@ -367,7 +372,10 @@ code > span.er { color: #ff0000; font-weight: bold; }
 <ul>
 <li>Though there is some Linux command line work involved.</li>
 </ul></li>
-<li><p>Nonetheless, <strong>aim for computational efficiency</strong>. There may be a <strong>substantive problem</strong> causing your computational problem.</p></li>
+<li><p>Nonetheless, <strong>aim for computational efficiency</strong>.</p>
+<ul>
+<li>There may be a <strong>substantive problem</strong> causing your computational problem.</li>
+</ul></li>
 </ul>
 </section>
 <section id="resources" class="slide level2">
@@ -375,6 +383,7 @@ code > span.er { color: #ff0000; font-weight: bold; }
 <p><br></p>
 <ul>
 <li><p>Gelman, Andrew, et al. 2014. <em>Bayesian Data Analysis</em>. 3rd Edition. Boca Raton, FL: CRC Press.</p></li>
+<li><p>Enjoyable <strong>historical context</strong>: McGrayne, Sharon Bertsch. 2012. <em>The Theory That Would Not Die</em>. New Haven: Yale University Press.</p></li>
 <li><p><a href="http://camdavidsonpilon.github.io/Probabilistic-Programming-and-Bayesian-Methods-for-Hackers/">Intro to Bayesian methods using Python</a>.</p></li>
 <li><p>Nice <strong>comparison of Bayesian vs. Frequentist methods</strong> in data driven <strong>business</strong> from the developers at <a href="http://developers.lyst.com/data/2014/05/10/bayesian-ab-testing/">Lyst</a>.</p></li>
 <li><p><strong>Prediction intervals and confidence intervals</strong>: nice explanatory <a href="http://robjhyndman.com/hyndsight/intervals/">post</a> by Rob Hyndman.</p></li>
