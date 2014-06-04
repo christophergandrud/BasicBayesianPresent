@@ -34,17 +34,21 @@ This slide deck is available at:
 
 <br>
 
-- We know that Bayesian data analysis (BDA) is **hot** in social science.
+We know that Bayesian data analysis (BDA) is **hot** in social science.
 
-- We also know that popularity $\neq$ widespread mastery or even literacy.
+<br>
+
+We also know that popularity $\neq$ widespread mastery or even literacy.
 
 ## Talk Aims
 
 <br>
 
-- **Begin a discussion** aiming towards BDA literacy.
+**Begin a discussion** aiming towards BDA literacy.
 
-- Give **examples** of how I've used BDA in my own work and a few **practical tips** I've learned along the way.
+<br>
+
+Give **examples** of how I've used BDA in my own work and a few **practical tips** I've learned along the way.
 
 ## What is statistical inference?
 
@@ -112,7 +116,7 @@ The estimates they produce have **different interpretations**.
 
 - **95% Probability (credible) interval**: there is a 95% **probability** that the unknown parameter is actually in the interval.
 
-## Modelling flexibility
+## Priors & Modelling flexibility
 
 <br>
 
@@ -163,7 +167,7 @@ A nice place to start is: Gelman et al. (2014) pages 4-6.
 
     - Draw $n$ values of the parameter point estimates ($\hat{\beta}$) from multivariate normal distributions with mean $\hat{\beta}$ and variance specified by the parameters' covariance.
 
-3. **Plot** some central interval of the results.
+3. **Plot** central interval of the results.
 
 ## A middle ground? (3)
 
@@ -185,8 +189,6 @@ A nice place to start is: Gelman et al. (2014) pages 4-6.
 
 - [MCMCpack](http://mcmcpack.berkeley.edu/) (R)
 
-- [PyMC](http://pymc-devs.github.io/pymc/) (Python)
-
 <br>
 
 ### Open-ended Models (program + R interface)
@@ -202,6 +204,8 @@ A nice place to start is: Gelman et al. (2014) pages 4-6.
 <br>
 
 ### Visualise diagnostics + results
+
+<br>
 
 - [coda](http://cran.r-project.org/web/packages/coda/index.html)
 
