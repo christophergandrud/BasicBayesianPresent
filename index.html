@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="generator" content="pandoc">
   <meta name="author" content="Christopher Gandrud" />
-  <title>DRAFT: 20 Minute Introduction to Bayesian Data Analysis</title>
+  <title>20 Minute Introduction to Bayesian Data Analysis</title>
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
@@ -90,7 +90,7 @@ code > span.er { color: #ff0000; font-weight: bold; }
     <div class="slides">
 
 <section>
-    <h1 class="title">DRAFT: 20 Minute Introduction to Bayesian Data Analysis</h1>
+    <h1 class="title">20 Minute Introduction to Bayesian Data Analysis</h1>
     <h2 class="author">Christopher Gandrud</h2>
     <h3 class="date">5 June 2014</h3>
 </section>
@@ -163,10 +163,9 @@ code > span.er { color: #ff0000; font-weight: bold; }
 <section id="uncertainty-in-frequentist-and-bayesian-approaches-1" class="slide level2">
 <h1>Uncertainty in Frequentist and Bayesian Approaches (1)</h1>
 <p><br></p>
-<ul>
-<li><p>Both involve the <strong>estimation of unknown quantities</strong> of interest, e.g. coefficient parameters <span class="math">\(\beta\)</span>.</p></li>
-<li><p>The estimates they produce have <strong>different interpretations</strong>.</p></li>
-</ul>
+<p>Both involve the <strong>estimation of unknown quantities</strong> of interest, e.g. coefficient parameters <span class="math">\(\beta\)</span>.</p>
+<p><br> <br></p>
+<p>The estimates they produce have <strong>different interpretations</strong>.</p>
 </section>
 <section id="uncertainty-about-parameters-in-frequentist-and-bayesian-approaches-2" class="slide level2">
 <h1>Uncertainty about parameters in Frequentist and Bayesian Approaches (2)</h1>
@@ -188,7 +187,7 @@ code > span.er { color: #ff0000; font-weight: bold; }
 <li>Can <strong>include prior information</strong> from different sources, including previous studies, while also <strong>incorporating uncertainty</strong>.</li>
 </ul>
 <p><br></p>
-<p>Very flexible:</p>
+<p><strong>Very flexible</strong>:</p>
 <ul>
 <li><p>Hierarchical models</p></li>
 <li><p>Item response models</p></li>
@@ -199,18 +198,16 @@ code > span.er { color: #ff0000; font-weight: bold; }
 <section id="notation" class="slide level2">
 <h1>Notation</h1>
 <p><br> <br> <br></p>
-<ul>
-<li><p>Good idea to become familiar with BDA notation.</p></li>
-<li><p>A nice place to start is: Gelman et al. (2014) pages 4-6.</p></li>
-</ul>
+<p>Good idea to become familiar with BDA notation.</p>
+<p><br></p>
+<p>A nice place to start is: Gelman et al. (2014) pages 4-6.</p>
 </section>
 <section id="a-middle-ground-1" class="slide level2">
 <h1>A middle ground? (1)</h1>
 <p><br></p>
 <ul>
-<li><p><a href="http://gking.harvard.edu/files/gking/files/making.pdf">King, Tomz, and Wittenberg (2000)</a> offer a middle ground for estimating <strong>common sense uncertainty</strong> with post-estimation simulations.</p></li>
+<li><p><a href="http://gking.harvard.edu/files/gking/files/making.pdf">King, Tomz, and Wittenberg (2000)</a> offer a middle ground for estimating <strong>common sense uncertainty</strong> with <strong>post-estimation simulations</strong>.</p></li>
 <li><p>Often less computationally intensive.</p></li>
-<li><p>Provides common sense interpretations of quantities of interest + uncertainty.</p></li>
 <li><p>However, not as flexible.</p></li>
 </ul>
 </section>
@@ -221,9 +218,9 @@ code > span.er { color: #ff0000; font-weight: bold; }
 <li><p><strong>Estimate parameters</strong> (using preferred model)</p></li>
 <li><p>Use <strong>post-estimation simulations</strong> to estimate uncertainty around quantities of interest.</p>
 <ul>
-<li>Draw <span class="math">\(n\)</span> values of the parameter point estimates (<span class="math">\(\hat{\beta}\)</span>) from multivariate normal distributions with mean <span class="math">\(\hat{\beta}\)</span> and variance specified by the parameter’s covariance.</li>
+<li>Draw <span class="math">\(n\)</span> values of the parameter point estimates (<span class="math">\(\hat{\beta}\)</span>) from multivariate normal distributions with mean <span class="math">\(\hat{\beta}\)</span> and variance specified by the parameters’ covariance.</li>
 </ul></li>
-<li><p>Usually <strong>plot</strong> results.</p></li>
+<li><p><strong>Plot</strong> some central interval of the results.</p></li>
 </ol>
 </section>
 <section id="a-middle-ground-3" class="slide level2">
@@ -237,11 +234,12 @@ code > span.er { color: #ff0000; font-weight: bold; }
 <section id="bda-software-1" class="slide level2">
 <h1>BDA Software (1)</h1>
 <p><br></p>
-<h3 id="predefined-models-with-r">Predefined Models (with R)</h3>
+<h3 id="predefined-models">Predefined Models</h3>
 <p><br></p>
 <ul>
-<li><p><a href="http://gking.harvard.edu/zelig">Zelig</a></p></li>
-<li><p><a href="http://mcmcpack.berkeley.edu/">MCMCpack</a></p></li>
+<li><p><a href="http://gking.harvard.edu/zelig">Zelig</a> (R)</p></li>
+<li><p><a href="http://mcmcpack.berkeley.edu/">MCMCpack</a> (R)</p></li>
+<li><p><a href="http://pymc-devs.github.io/pymc/">PyMC</a> (Python)</p></li>
 </ul>
 <p><br></p>
 <h3 id="open-ended-models-program-r-interface">Open-ended Models (program + R interface)</h3>
@@ -268,7 +266,7 @@ code > span.er { color: #ff0000; font-weight: bold; }
 <ul>
 <li><p><strong>Research question</strong>: does US presidential party ID affect Federal Reserve staff inflation forecast errors?</p></li>
 <li><p><strong>Bayesian methods</strong>: predefined model in Zelig (<code>normal.bayes</code>) used primarily to examine model dependence.</p></li>
-<li><p>All code available at on <a href="https://github.com/christophergandrud/GreenBook">GitHub</a>.</p></li>
+<li><p>All code available on <a href="https://github.com/christophergandrud/GreenBook">GitHub</a>.</p></li>
 </ul>
 </section>
 <section id="my-own-research-predefined-models-1" class="slide level2">
@@ -282,8 +280,8 @@ code > span.er { color: #ff0000; font-weight: bold; }
 <p><br></p>
 <ul>
 <li><p><strong>Research question</strong>: what causes financial regulatory transparency and what are its consequences for financial stability?</p></li>
-<li><p><strong>Bayesian methods</strong>: created a Bayesian Item Response model to estimate an unobserved quantity (<em>financial transparency</em>) based on whether or not countries had reported data to the World Bank’s Global Financial Development Database.</p></li>
-<li><p>All code available at on <a href="https://github.com/FGCH/FRTIndex">GitHub</a>.</p></li>
+<li><p><strong>Bayesian methods</strong>: created a <strong>Bayesian Item Response</strong> model to estimate an unobserved quantity (<em>financial transparency</em>) based on whether or not countries had reported data to the World Bank’s Global Financial Development Database.</p></li>
+<li><p>All code available on <a href="https://github.com/FGCH/FRTIndex">GitHub</a>.</p></li>
 </ul>
 </section>
 <section id="financial-transparency-index-in-2011" class="slide level2">
@@ -312,7 +310,7 @@ code > span.er { color: #ff0000; font-weight: bold; }
 <p><br></p>
 <ul>
 <li><p>Setting up a probability model is an <strong>interative process</strong> as you adjust the parameters to include in the model and the data.</p></li>
-<li><p>So it can be good to develop source code that <strong>dynamically</strong> creates the probability model.</p></li>
+<li><p>So, it can be good to develop source code that <strong>dynamically</strong> creates the probability model.</p></li>
 <li><p>Use your programming language’s version of <a href="http://en.wikipedia.org/wiki/Concatenation">concatenate</a>.</p>
 <ul>
 <li><p><code>cat</code> in R</p></li>
@@ -367,8 +365,8 @@ code > span.er { color: #ff0000; font-weight: bold; }
 <p><br></p>
 <ul>
 <li><p>Conditioning a probability model on observed data can be <strong>computationally intensive</strong>, i.e. it can slow your desktop computer to a crawl.</p></li>
-<li><p>So it can be useful to run on a <strong>remote server</strong>.</p></li>
-<li><p>Relatviely easy to set up (see <a href="http://blog.yhathq.com/posts/r-in-the-cloud-part-1.html">here</a> and <a href="https://github.com/FGCH/FRTIndex/blob/master/source/AmazonEC2Setup.sh">my FRT code</a>).</p>
+<li><p>So, it can be useful to run on a <strong>remote server</strong>.</p></li>
+<li><p>Relatively easy to set up (see <a href="http://blog.yhathq.com/posts/r-in-the-cloud-part-1.html">here</a> and <a href="https://github.com/FGCH/FRTIndex/blob/master/source/AmazonEC2Setup.sh">my FRT code</a>).</p>
 <ul>
 <li>Though there is some Linux command line work involved.</li>
 </ul></li>

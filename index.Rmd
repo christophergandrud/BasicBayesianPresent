@@ -1,5 +1,5 @@
 ---
-title: "DRAFT: 20 Minute Introduction to Bayesian Data Analysis"
+title: "20 Minute Introduction to Bayesian Data Analysis"
 author: "Christopher Gandrud"
 date: "5 June 2014"
 output:
@@ -90,9 +90,12 @@ Update **prior** information with **new data** to create a **posterior** probabi
 
 <br>
 
-- Both involve the **estimation of unknown quantities** of interest, e.g. coefficient parameters $\beta$.
+Both involve the **estimation of unknown quantities** of interest, e.g. coefficient parameters $\beta$.
 
-- The estimates they produce have **different interpretations**.
+<br>
+<br>
+
+The estimates they produce have **different interpretations**.
 
 ## Uncertainty about parameters in Frequentist and Bayesian Approaches (2)
 
@@ -117,7 +120,7 @@ Update **prior** information with **new data** to create a **posterior** probabi
 
 <br>
 
-Very flexible:
+**Very flexible**:
 
 - Hierarchical models
 
@@ -133,20 +136,20 @@ Very flexible:
 <br>
 <br>
 
-- Good idea to become familiar with BDA notation.
+Good idea to become familiar with BDA notation.
 
-- A nice place to start is: Gelman et al. (2014) pages 4-6.
+<br>
+
+A nice place to start is: Gelman et al. (2014) pages 4-6.
 
 
 ## A middle ground? (1)
 
 <br>
 
-- [King, Tomz, and Wittenberg (2000)](http://gking.harvard.edu/files/gking/files/making.pdf) offer a middle ground for estimating **common sense uncertainty** with post-estimation simulations.
+- [King, Tomz, and Wittenberg (2000)](http://gking.harvard.edu/files/gking/files/making.pdf) offer a middle ground for estimating **common sense uncertainty** with **post-estimation simulations**.
 
 - Often less computationally intensive.
-
-- Provides common sense interpretations of quantities of interest + uncertainty.
 
 - However, not as flexible.
 
@@ -158,9 +161,9 @@ Very flexible:
 
 2. Use **post-estimation simulations** to estimate uncertainty around quantities of interest.
 
-    - Draw $n$ values of the parameter point estimates ($\hat{\beta}$) from multivariate normal distributions with mean $\hat{\beta}$ and variance specified by the parameter's covariance.
+    - Draw $n$ values of the parameter point estimates ($\hat{\beta}$) from multivariate normal distributions with mean $\hat{\beta}$ and variance specified by the parameters' covariance.
 
-3. Usually **plot** results.
+3. **Plot** some central interval of the results.
 
 ## A middle ground? (3)
 
@@ -174,13 +177,15 @@ Very flexible:
 
 <br>
 
-### Predefined Models (with R)
+### Predefined Models
 
 <br>
 
-- [Zelig](http://gking.harvard.edu/zelig)
+- [Zelig](http://gking.harvard.edu/zelig) (R)
 
-- [MCMCpack](http://mcmcpack.berkeley.edu/)
+- [MCMCpack](http://mcmcpack.berkeley.edu/) (R)
+
+- [PyMC](http://pymc-devs.github.io/pymc/) (Python)
 
 <br>
 
@@ -214,7 +219,7 @@ Very flexible:
 
 - **Bayesian methods**: predefined model in Zelig (`normal.bayes`) used primarily to examine model dependence.
 
-- All code available at on [GitHub](https://github.com/christophergandrud/GreenBook).
+- All code available on [GitHub](https://github.com/christophergandrud/GreenBook).
 
 ## My own research: Predefined models
 
@@ -230,9 +235,9 @@ Very flexible:
 
 - **Research question**: what causes financial regulatory transparency and what are its consequences for financial stability?
 
-- **Bayesian methods**: created a Bayesian Item Response model to estimate an unobserved quantity (*financial transparency*) based on whether or not countries had reported data to the World Bank’s Global Financial Development Database.
+- **Bayesian methods**: created a **Bayesian Item Response** model to estimate an unobserved quantity (*financial transparency*) based on whether or not countries had reported data to the World Bank’s Global Financial Development Database.
 
-- All code available at on [GitHub](https://github.com/FGCH/FRTIndex).
+- All code available on [GitHub](https://github.com/FGCH/FRTIndex).
 
 ## Financial Transparency Index in 2011
 
@@ -267,12 +272,12 @@ Very flexible:
 
 - Setting up a probability model is an **interative process** as you adjust the parameters to include in the model and the data.
 
-- So it can be good to develop source code that **dynamically** creates the probability model.
+- So, it can be good to develop source code that **dynamically** creates the probability model.
 
 - Use your programming language's version of [concatenate](http://en.wikipedia.org/wiki/Concatenation).
 
     - `cat` in R
-    
+
     - `+` in Python
 
 ---
@@ -334,13 +339,13 @@ alpha[2,1] <- 0
 
 - Conditioning a probability model on observed data can be **computationally intensive**, i.e. it can slow your desktop computer to a crawl.
 
-- So it can be useful to run on a **remote server**.
+- So, it can be useful to run on a **remote server**.
 
-- Relatviely easy to set up (see [here](http://blog.yhathq.com/posts/r-in-the-cloud-part-1.html) and [my FRT code](https://github.com/FGCH/FRTIndex/blob/master/source/AmazonEC2Setup.sh)).
+- Relatively easy to set up (see [here](http://blog.yhathq.com/posts/r-in-the-cloud-part-1.html) and [my FRT code](https://github.com/FGCH/FRTIndex/blob/master/source/AmazonEC2Setup.sh)).
 
     - Though there is some Linux command line work involved.
 
-- Nonetheless, **aim for computational efficiency**. 
+- Nonetheless, **aim for computational efficiency**.
 
     - There may be a **substantive problem** causing your computational problem.
 
