@@ -120,7 +120,7 @@ The estimates they produce have **different interpretations**.
 
 <br>
 
-- Can **include prior information** from different sources, including previous studies, while also **incorporating uncertainty**.
+Can **include prior information** from different sources, including previous studies, while also **incorporating uncertainty**.
 
 <br>
 
