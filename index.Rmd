@@ -1,5 +1,5 @@
 ---
-title: "20 Minute Introduction to Bayesian Data Analysis"
+title: "A Simple Introduction to Bayesian Data Analysis"
 author: "Christopher Gandrud"
 date: "5 June 2014"
 output:
@@ -99,7 +99,7 @@ Both involve the **estimation of unknown quantities** of interest, e.g. coeffici
 
 The estimates they produce have **different interpretations**.
 
-## Uncertainty about parameters in Frequentist and Bayesian Approaches (2)
+## Uncertainty in Frequentist and Bayesian Approaches (2)
 
 <br>
 
