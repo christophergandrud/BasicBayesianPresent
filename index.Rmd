@@ -40,7 +40,7 @@ We know that Bayesian data analysis (BDA) is **hot** in social science.
 
 We also know that popularity $\neq$ widespread mastery or even literacy.
 
-## Talk Aims
+## Talk Aim
 
 <br>
 <br>
@@ -129,19 +129,6 @@ Can **include prior information** from different sources, including previous stu
 - Missing data imputation
 
 -  . . .
-
-## Notation
-
-<br>
-<br>
-<br>
-
-Good idea to become familiar with BDA notation.
-
-<br>
-
-A nice place to start is: Gelman et al. (2014) pages 4-6.
-
 
 ## A middle ground? (1)
 
@@ -249,7 +236,19 @@ Similar overall to Markov-Chain Monte Carlo techniques, but different in how the
 
 <img src="img/discriminationPlot.png" width="100%"></img>
 
-## Practical tips (1)
+## Practical tip (1)
+
+<br>
+<br>
+<br>
+
+Good idea to become familiar with BDA **notation**.
+
+<br>
+
+A nice place to start is: Gelman et al. (2014) pages 4-6.
+
+## Practical tip (2)
 
 <br>
 
@@ -264,7 +263,7 @@ Similar overall to Markov-Chain Monte Carlo techniques, but different in how the
 - [Hollyer, Rosendorff, and Vreeland (2014)]() was the starting point of our FRT Index.
 
 
-## Practical tips (2)
+## Practical tip (3)
 
 <br>
 
@@ -331,7 +330,7 @@ alpha[2,1] <- 0
 <a href="http://xkcd.com/974/"><img src="http://imgs.xkcd.com/comics/the_general_problem.png"></img></a>
 
 
-## Practical tips (3)
+## Practical tip (4)
 
 <br>
 
