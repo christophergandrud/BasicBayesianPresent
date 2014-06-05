@@ -78,8 +78,6 @@ Update **prior** information with **new data** to create a **posterior** probabi
 
 3. Evaluate the **fit** of the model and posterior distribution's **implications** (*posterior*).
 
-4. **Repeat** when new data is available.
-
 ## A Key Contribution: Emphasising uncertainty estimation
 
 <br>
@@ -114,7 +112,7 @@ The estimates they produce have **different interpretations**.
 
 ### Bayesian 'common sense interpretation'
 
-- **95% Probability (credible) interval**: there is a 95% **probability** that the unknown parameter is actually in the interval.
+- **95% Probability (credible) interval**: There is a 95% **probability** that the unknown parameter is actually in the interval.
 
 ## Priors & Modelling flexibility
 
@@ -173,21 +171,23 @@ A nice place to start is: Gelman et al. (2014) pages 4-6.
 
 <br>
 
-- Similar overall to Markov-Chain Monte Carlo techniques, but different in how the parameters are drawn.
+Similar overall to Markov-Chain Monte Carlo techniques, but different in how the parameters are drawn.
 
-- [Zelig](http://gking.harvard.edu/zelig) has good capabilities for doing this and I've implemented it for interactions in survival models with [simPH](http://christophergandrud.github.io/simPH/) and dynamic autoregressive relationships in [dynsim](http://christophergandrud.github.io/dynsim/) (with Laron Williams and Guy Whitten).
+<br>
+
+[Zelig](http://gking.harvard.edu/zelig) has good capabilities for doing this and I've implemented it for interactions in survival models with [simPH](http://christophergandrud.github.io/simPH/) and dynamic autoregressive relationships in [dynsim](http://christophergandrud.github.io/dynsim/) (with Laron Williams and Guy Whitten).
 
 ## BDA Software (1)
 
 <br>
 
-### Predefined Models
+### Predefined Models (for R)
 
 <br>
 
-- [Zelig](http://gking.harvard.edu/zelig) (R)
+- [Zelig](http://gking.harvard.edu/zelig)
 
-- [MCMCpack](http://mcmcpack.berkeley.edu/) (R)
+- [MCMCpack](http://mcmcpack.berkeley.edu/)
 
 <br>
 
@@ -203,7 +203,7 @@ A nice place to start is: Gelman et al. (2014) pages 4-6.
 
 <br>
 
-### Visualise diagnostics + results
+### Visualise diagnostics + results (for R)
 
 <br>
 
@@ -245,7 +245,7 @@ A nice place to start is: Gelman et al. (2014) pages 4-6.
 
 ## Financial Transparency Index in 2011
 
-<img src="figs/FRT_2011.png" width="80%"></img>
+<img src="figs/FRT_2011.png" width="65%"></img>
 
 ## Discrimination Plot
 
