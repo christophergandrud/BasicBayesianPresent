@@ -227,7 +227,7 @@ Similar overall to Markov-Chain Monte Carlo techniques, but different in how the
 
 ## My own research: Predefined models
 
-<img src="figs/CoefComparePlots.png" width="850px"></img>
+<img src="img/CoefComparePlots.png" width="850px"></img>
 
 ## My own research: Open-ended Models
 
@@ -245,11 +245,11 @@ Similar overall to Markov-Chain Monte Carlo techniques, but different in how the
 
 ## Financial Transparency Index in 2011
 
-<img src="figs/FRT_2011.png" width="65%"></img>
+<img src="img/FRT_2011.png" width="65%"></img>
 
 ## Discrimination Plot
 
-<img src="figs/discriminationPlot.png" width="100%"></img>
+<img src="img/discriminationPlot.png" width="100%"></img>
 
 ## Practical tips (1)
 
