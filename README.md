@@ -9,4 +9,6 @@ To view the presentation visit: <http://christophergandrud.github.io/BasicBayesi
 
 ## Printing
 
-To print the slides or turn them into a format you can save as a PDF use the URL: <http://christophergandrud.github.io/BasicBayesianPresent?print-pdf#>.
+To print the slides or turn them into a format you can save as a PDF use the URL:
+
+<http://christophergandrud.github.io/BasicBayesianPresent?print-pdf#>
